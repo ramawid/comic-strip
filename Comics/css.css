@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body, html {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+  .header{
+   width: 100%;
+   height: 80px;
+   position: relative;
+   top: 0;
+   left: 0; 
+  }
+  .logotxt{
+    float: left;
+    margin-left: 50px;
+    color: #fff;
+    margin-top: 15px;
+  }
+  .headerul{
+    list-style: none;
+    float: right;
+    margin-right: 30px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-top: 25px;
+  }
+  .headerul li{
+    padding: 10px 15px;
+    display: inline;
+    margin-right: 30px;
+  }
+  .headerul li:hover,
+  .headerul li.active{
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+  }
+  .explore{
+    width: 130px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 30px;
+    margin-top: 60px;
+    z-index: 12;  
+}
+  .bgimg-1{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    z-index: 12;
+}
+  .bgimg-1 {
+    background-image: url("images/flower.jpeg");
+    min-height: 100%;
+  }
+  .caption {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    text-align: center;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .imgbg{
+    position:absolute;
+    top: 0px;
+    bottom: 0;
+    right: auto;
+    width: 400px;
+    height: 400px;
+    z-index: 0;
+  }
+  .section{
+    position: relative;
+    padding: 100px;
+    width: 100%;
+    background: #2D6903;
+    color: #fff;
+    z-index: 12;
+  }
+  .section h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+ }
+ .section p{
+    font-size: 1em;
+    color: #fff;
+ }
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1{
+      background-attachment: scroll;
+    }
+  }
+  @import url('https://fonts.googleapis.com/css?family=Bangers');
+  * {
+    box-sizing: border-box;
+  }
+.container{      
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-auto-rows: 1fr;
+    grid-gap: 1em;
+    max-width: 1440px;
+    margin: 0 auto;
+    z-index: 12;
+  }
+  .item{
+    display: inline-block;
+    min-height: 400px;
+    width: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 12;
+  }
+  .item:nth-child(1){
+    background-color: #e74c3c;
+    background-image: url(images/panel1.png);
+    background-position: 20% 60%;
+    background-position: left 65%;
+  }
+  .item:nth-child(2){
+    background-color: #3498db;
+    background-image: url(images/panel2.png);
+    background-position: center 35%; 
+  }
+  .item:nth-child(3){
+    background-color: #bdc3c7;
+    background-image: url(images/Panel3.png);
+    background-position: center 50%;
+  }
+  .item:nth-child(4){
+    background-color: #1464b5;
+    background-image: url(images/panel4.png);
+  } 
+  .item:nth-child(5){
+    background-color: #20c541;
+    background-image: url(images/Panel5.png);
+    background-position: center -10px;
+  } 
+  .item:nth-child(6){
+    background-color: #27ae60;
+    background-image: url(images/panel6.png);
+    background-position: 50% 30%;
+  } 
+  .item:nth-child(7){
+    background-color: #f1c40f;
+    background-image: url(images/panel7.png);
+    background-position: left 40%;   
+  } 
+  .item:nth-child(8){
+    background-color: #2980b9;
+    background-image: url(images/panel8.png);
+    background-position: center 22%;  
+  } 
+   @supports (display:grid){
+    .item{
+      width: auto;
+      min-height: 0;
+    }  
+    .item:nth-child(1){
+      grid-column: 1 / span 1;
+      grid-row: 1 / 20;  
+      -webkit-clip-path: polygon(0 0, 80% 0, 100% 76.5%, 0 100%);
+      clip-path: polygon(0 0, 80% 0, 100% 76.5%, 0 100%);
+      margin-bottom: -93px;
+    }
+    .item:nth-child(2){
+      grid-column: 2 / span 1;
+      grid-row: 1 / 20;  
+      -webkit-clip-path: polygon(0 0, 100% 0, 75% 80%, 15.5% 100%);
+      clip-path: polygon(0 0, 100% 0, 75% 80%, 15.5% 100%);
+      margin-left: -21%;
+      margin-right: -4.5%;
+    }
+    .item:nth-child(3){
+      grid-column: 3 / span 1;
+      grid-row: 1 / 20; 
+      -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 53%);
+      clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 53%);
+      margin-left: -28%;
+      margin-bottom: -150px;
+    }
+    .item:nth-child(4){
+      grid-column: 1 / span 1;
+      grid-row: 20 / 40; 
+      -webkit-clip-path: polygon(0 22.5%, 100% 0, 100% 77.5%, 0 100%);
+      clip-path: polygon(0 22.5%, 100% 0, 100% 77.5%, 0 100%);
+      margin-top: -5px;
+      margin-bottom: -93px;    
+    } 
+    .item:nth-child(5){
+      grid-column: 2 / span 1;
+      grid-row: 20 / 40;
+      -webkit-clip-path: polygon(0 13%, 74% 0, 100% 9.25%, 100% 100%, 0 100%);
+      clip-path: polygon(0 13%, 74% 0, 100% 9.25%, 100% 82%, 65% 100%,0 82%);
+      margin-top: -67px;
+      margin-left: -1%;
+      margin-bottom: -86px;
+    } 
+    .item:nth-child(6){
+      grid-column: 3 / span 1;
+      grid-row: 20 / 40;
+      -webkit-clip-path: polygon(0 0, 100% 34.5%, 100% 100%, 0 68.5%) ;
+      clip-path: polygon(0 0, 100% 34.5%, 100% 100%, 0 68.5%);
+      margin-left: -1%;
+      margin-top: -20px;
+      margin-bottom: -150px;
+    } 
+    .item:nth-child(7){
+      grid-column: 1 / 3;
+      grid-row: 40 / 60; 
+      -webkit-clip-path: polygon(0 30%, 49% 0, 75% 38%, 34% 100%, 0 100%);
+      clip-path: polygon(0 30%, 49% 0, 82% 27%, 34% 100%, 0 100%);
+      margin-top: -7px;
+    } 
+    .item:nth-child(8){
+      grid-column: 2 / span 2;
+      grid-row: 40 / 60;
+      -webkit-clip-path: polygon(0 100%, 57% 0, 100% 48%, 100% 100%, 0 100%);
+      clip-path: polygon(0 100%, 57% 0, 100% 48%, 100% 100%, 0 100%);
+      margin-left: -15%;
+      margin-top: -7px;
+    }   
+  }
+  .wood{
+    font-size: 4em;
+    color: #fff;
+    margin-top: 140px;
+    margin-bottom: 10px;
+    z-index: 12;
+  }

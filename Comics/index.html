@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body id="c">
+<div class="bgimg-1" id="bgimg">
+    <header class="header">
+        <ul class="headerul">
+            <li class="active">Home</li>
+
+        </ul>
+    </header>
+<div class="caption">
+    <img src="images/dragon.png" class="imgbg" id="text" />
+  <div>
+    <p class="wood" id="word">Into the woods</p>
+  </div>
+</div>
+
+</div>
+<div class="section">
+    <h2>Comics</h2>
+    <p>"Comics is a medium used to express ideas with images, often combined with text or other visual information. It typically takes the form of a sequence of panels of images. Textual devices such as speech balloons, captions, and onomatopoeia can indicate dialogue, narration, sound effects, or other information. There is no consensus amongst theorists and historians on a definition of comics; some emphasize the combination of images and text, some sequentiality or other image relations, and others historical aspects such as mass reproduction or the use of recurring characters. Cartooning and other forms of illustration are the most common image-making means in comics; fumetti is a form that uses photographic images. Common forms include comic strips, editorial and gag cartoons, and comic books. Since the late 20th century, bound volumes such as graphic novels, comic albums, and tankōbon have become increasingly common, while online webcomics have proliferated in the 21st century. "</p>
+    <p>"The history of comics has followed different paths in different cultures. Scholars have posited a pre-history as far back as the Lascaux cave paintings. By the mid-20th century, comics flourished, particularly in the United States, western Europe (especially France and Belgium), and Japan. The history of European comics is often traced to Rodolphe Töpffer's cartoon strips of the 1830s, and became popular following the success in the 1930s of strips and books such as The Adventures of Tintin. American comics emerged as a mass medium in the early 20th century with the advent of newspaper comic strips; magazine-style comic books followed in the 1930s, in which the superhero genre became prominent after Superman appeared in 1938."</p>
+</div>
+<div style="color: #777;background-color:white;text-align:center;padding:0px 0px;text-align: justify;z-index: 12;">
+    <div class="container" style="z-index: 12;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item">
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>  
+      </div>
+      <div class="text-box">
+      </div>
+      <audio id="myAudio">
+        <source src="audio/panel1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+<script src="js.js"></script>
+</div>
+<script>
+const scrollDemo = document.querySelector("#c");
+        const output = document.querySelector("#word");
+        scrollDemo.addEventListener("scroll", event => {
+          if(scrollDemo.scrollTop>=184){
+            document.getElementById("text").style.display="none";
+          }
+          else{
+          document.getElementById("text").style.display="block";
+          }
+        }, { passive: true });
+</script>
+</body>
+</html>
